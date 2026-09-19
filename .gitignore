@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.*
+!.env.example
+google-service-account.json
+*-credentials.json
+*.pem
+.DS_Store
+data/items.json
+data/pdf-exports.json
+data/pdfs/
+data/settings.json
+data/activity.json
+client/dist

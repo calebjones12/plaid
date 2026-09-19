@@ -1,0 +1,16 @@
+[Unit]
+Description=Plaid Google Sheets sync
+After=network.target
+
+[Service]
+Type=simple
+User=plaid
+Group=plaid
+WorkingDirectory=/opt/plaid
+Environment=NODE_ENV=production
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

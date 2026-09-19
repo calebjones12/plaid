@@ -1,0 +1,30 @@
+{
+  "name": "plaid-project",
+  "version": "1.0.0",
+  "description": "Connect a U.S. bank account with Plaid Link (Steps 1–5)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "daily": "node server.js --daily",
+    "build": "npm run build -w client",
+    "dev:client": "npm run dev -w client"
+  },
+  "private": true,
+  "workspaces": [
+    "client"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.1",
+    "express": "^5.2.1",
+    "googleapis": "^181.0.0",
+    "node-cron": "^4.6.0",
+    "plaid": "^47.0.0",
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0"
+  }
+}
